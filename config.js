@@ -11,7 +11,7 @@
    latest ...... the "latest edition" shown in the newspaper clipping
    ========================================================================== */
 const NVJ = {
-  ca: "",
+  ca: "AM7U2Ss666pnmUEQNdzqxTwdc9HztQ9kVZAUngg9pump",
   domain: "nvjornaul.github.io",
   links: {
     x: "https://x.com/NVJournal",
