@@ -12,7 +12,7 @@
    ========================================================================== */
 const NVJ = {
   ca: "",
-  domain: "nvjornaul.com",
+  domain: "nvjornaul.github.io",
   links: {
     x: "https://x.com/NVJournal",
     buy: "",
