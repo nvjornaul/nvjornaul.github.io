@@ -9,23 +9,23 @@
   When a custom domain is connected, replace that address in the tags below
   (canonical, og:url, og:image, twitter:image) and set "domain" in config.js.
 -->
-<title>New Venezuela Jornaul ($SOSTRUMP): the paper now prints its own coin</title>
-<meta name="description" content="$SOSTRUMP is the meme coin of the New Venezuela Jornaul (@NVJournal), the vintage front pages of a changing hemisphere. Fair launch on pump.fun, Solana.">
+<title>New Venezuela Jornaul ($SOSTRUMP): more than a memecoin, a message to the world</title>
+<meta name="description" content="We don&rsquo;t want your money. We want your attention. $SOSTRUMP is the memecoin of the New Venezuela Jornaul (@NVJournal) on Solana: a message for transparency, justice and freedom.">
 <link rel="canonical" href="https://nvjornaul.github.io/">
 <meta name="theme-color" content="#17100a">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="New Venezuela Jornaul">
 <meta property="og:title" content="New Venezuela Jornaul ($SOSTRUMP)">
-<meta property="og:description" content="Stop the presses: the paper now prints its own coin. $SOSTRUMP on Solana.">
+<meta property="og:description" content="We don&rsquo;t want your money. We want your attention. More than a memecoin. A message to the world.">
 <meta property="og:url" content="https://nvjornaul.github.io/">
 <meta property="og:image" content="https://nvjornaul.github.io/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="New Venezuela Jornaul front page announcing the $SOSTRUMP coin">
+<meta property="og:image:alt" content="New Venezuela Jornaul front page: We don&rsquo;t want your money. We want your attention.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@NVJournal">
 <meta name="twitter:title" content="New Venezuela Jornaul ($SOSTRUMP)">
-<meta name="twitter:description" content="Stop the presses: the paper now prints its own coin. $SOSTRUMP on Solana.">
+<meta name="twitter:description" content="We don&rsquo;t want your money. We want your attention. More than a memecoin. A message to the world.">
 <meta name="twitter:image" content="https://nvjornaul.github.io/og.jpg">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -45,8 +45,8 @@
 @font-face{font-family:"NVJ Wire";src:url(assets/fonts/courier-prime-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
 
 :root{
-  --paper:#d9c6a0;--paper-hi:#ece0c2;--ink:#1e160d;--ink-2:#4b3b27;--ink-rule:rgba(30,22,13,.42);
-  --stamp:#a3271c;--desk:#17100a;
+  --paper:#dbc396;--paper-hi:#efe0bd;--ink:#1e160d;--ink-2:#4b3b27;--ink-rule:rgba(30,22,13,.42);
+  --stamp:#8e140c;--red:#860c07;--desk:#17100a;
   --f-mast:"NVJ Mast","UnifrakturMaguntia","Old English Text MT",serif;
   --f-head:"NVJ Headline","NVJ Display",Georgia,serif;
   --f-disp:"NVJ Display",Georgia,serif;
@@ -105,38 +105,46 @@ a{color:inherit}
 .ears{container-type:inline-size;display:grid;grid-template-columns:7.6rem minmax(0,1fr) 7.6rem;align-items:center;gap:1rem}
 .ear{margin:0;border:3px double var(--ink);padding:.45rem .4rem;font:700 .76rem/1.28 var(--f-text);text-transform:uppercase;letter-spacing:.06em;text-align:center}
 .masthead{margin:0;font-family:var(--f-mast);font-weight:400;font-size:clamp(2rem,6.2vw,5.5rem);font-size:min(5.6rem,calc((100cqi - 17.2rem) / 10.1));line-height:1.04;text-align:center;white-space:nowrap;text-shadow:0 0 1px rgba(30,22,13,.45)}
-.motto{margin:.6rem 0 .75rem;text-align:center;font:700 clamp(.64rem,1.2vw,.92rem)/1.25 var(--f-text);text-transform:uppercase;letter-spacing:.24em}
+.motto{display:flex;align-items:center;gap:1rem;margin:.6rem 0 .7rem;font:700 clamp(.64rem,1.2vw,.92rem)/1.3 var(--f-text);text-transform:uppercase;letter-spacing:.18em;text-align:center}
+.motto::before,.motto::after{content:"";flex:1 1 2rem;height:1px;background:var(--ink)}
 .dateline{display:flex;justify-content:space-between;gap:.25rem 1.2rem;flex-wrap:wrap;padding:.42rem .1rem .48rem;border-top:1px solid var(--ink);border-bottom:5px double var(--ink);font:400 clamp(.68rem,1.15vw,.88rem)/1.2 var(--f-text);text-transform:uppercase;letter-spacing:.06em}
-.headline{margin:clamp(1.1rem,2.8vw,1.9rem) auto .55rem;max-width:12.5em;font:800 clamp(2.7rem,8.4vw,7.3rem)/.93 var(--f-head);text-align:center;letter-spacing:-.006em;text-wrap:balance;text-shadow:0 0 1px rgba(30,22,13,.35)}
-.dek{margin:0 auto;max-width:32ch;font:700 clamp(1.12rem,2.25vw,1.9rem)/1.18 var(--f-disp);text-align:center;text-wrap:balance}
-.front__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.9fr) minmax(0,1.2fr);margin-top:clamp(1.2rem,2.8vw,2rem);padding-top:1.1rem;border-top:1px solid var(--ink)}
-.col{padding:0 clamp(.9rem,1.8vw,1.45rem)}
-.col:first-child{padding-left:0}
-.col:last-child{padding-right:0}
-.col+.col{border-left:1px solid var(--ink-rule)}
-.col__head{margin:0;font:800 1.2rem/1.07 var(--f-disp);font-stretch:70%;text-transform:uppercase;letter-spacing:.01em}
-.orn{display:block;width:4rem;height:10px;margin:.65rem auto .8rem;color:var(--ink)}
-.col--lead p{margin:0 0 .8rem;text-align:justify;-webkit-hyphens:auto;hyphens:auto;font-size:1.02rem;line-height:1.5}
-.col--lead .place{font-variant:small-caps;letter-spacing:.04em}
-.col--photo{margin:0}
-.col--photo img{width:100%;mix-blend-mode:multiply}
-.col--photo figcaption,.caption{margin-top:.55rem;font:italic .95rem/1.4 var(--f-text);color:var(--ink-2);text-align:center}
-.col--copy{display:flex;flex-direction:column;gap:.9rem}
-.col__head--big{font:800 clamp(1.8rem,2.7vw,2.4rem)/1 var(--f-head);text-transform:none;letter-spacing:0}
+.headline{margin:clamp(1rem,2.6vw,1.7rem) 0 0;font:800 clamp(2.45rem,6.1vw,4.85rem)/.95 var(--f-head);font-size:min(4.85rem,6.1vw);text-align:center;text-transform:uppercase;letter-spacing:-.004em;text-wrap:balance;text-shadow:0 0 1px rgba(30,22,13,.35)}
+.headline span{display:block}
+.headline__red{color:var(--red);text-shadow:0 0 1px rgba(134,12,7,.35)}
+.caption{margin-top:.55rem;font:italic .95rem/1.4 var(--f-text);color:var(--ink-2);text-align:center}
 
 /* contract coupon */
-.coupon{position:relative;margin-top:.5rem;border:2px dashed var(--ink);padding:1.1rem .95rem .95rem;background:rgba(255,249,232,.3)}
+.coupon{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:.9rem;margin:clamp(1.4rem,3vw,2rem) 0 0;border:2px dashed var(--ink);padding:1.15rem 1.2rem 1.05rem;background:rgba(255,249,232,.3)}
 .coupon__cut{position:absolute;top:-.78rem;left:.8rem;width:1.5rem;height:1.5rem;padding:.12rem;background:var(--paper);color:var(--ink)}
 .coupon__label{margin:0;font:700 1rem/1.2 var(--f-disp)}
-.coupon__ca{margin:.45rem 0 .85rem;font:700 1rem/1.42 var(--f-wire);word-break:break-all;-webkit-user-select:all;user-select:all}
+.coupon__ca{margin:.35rem 0 .45rem;font:700 clamp(.95rem,1.55vw,1.18rem)/1.35 var(--f-wire);word-break:break-all;-webkit-user-select:all;user-select:all}
 .coupon[data-state="pending"] .coupon__ca{font:italic 400 1.02rem/1.42 var(--f-text);color:var(--ink-2);-webkit-user-select:none;user-select:none}
+.coupon__actions{display:flex;flex-wrap:wrap;gap:.6rem}
 .stamp{position:absolute;right:-.5rem;top:-1.25rem;transform:rotate(-8deg);padding:.3rem .6rem .24rem;border:3px solid var(--stamp);color:var(--stamp);font:800 1rem/1 var(--f-disp);font-stretch:68%;text-transform:uppercase;letter-spacing:.08em;opacity:.9;pointer-events:none;mix-blend-mode:multiply;
   -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='60'%3E%3Cfilter id='m' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5 0 0 0 -1.15'/%3E%3C/filter%3E%3Crect width='160' height='60' filter='url(%23m)'/%3E%3C/svg%3E");
   mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='60'%3E%3Cfilter id='m' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5 0 0 0 -1.15'/%3E%3C/filter%3E%3Crect width='160' height='60' filter='url(%23m)'/%3E%3C/svg%3E")}
 .stamp.is-thump{animation:thump .34s cubic-bezier(.2,1.5,.4,1)}
 @keyframes thump{0%{transform:rotate(-8deg) scale(1.9);opacity:0}55%{opacity:.95}100%{transform:rotate(-8deg) scale(1);opacity:.9}}
 .note{margin:0;font:italic .93rem/1.42 var(--f-text);color:var(--ink-2)}
-.cta-stack{display:grid;gap:.6rem}
+
+/* manifesto */
+.manifesto{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:clamp(1.4rem,3vw,2.1rem);padding-top:1.2rem;border-top:1px solid var(--ink)}
+.mcol{padding:0 clamp(.9rem,1.8vw,1.5rem)}
+.mcol:first-child{padding-left:0}
+.mcol:last-child{padding-right:0}
+.mcol+.mcol{border-left:1px solid var(--ink-rule)}
+.mcol p{margin:0 0 .9rem;font-size:1.05rem;line-height:1.52}
+.mcol .lead-in{font:700 1.24rem/1.3 var(--f-disp)}
+.mcol h3{margin:1.4rem 0 .55rem;padding-top:1rem;border-top:1px solid var(--ink-rule);font:800 1.34rem/1.06 var(--f-disp);font-stretch:70%;text-transform:uppercase;letter-spacing:.01em}
+.mcol h3:first-child{margin-top:0;padding-top:0;border-top:0}
+.mcol .mphoto+h3{margin-top:1rem;padding-top:0;border-top:0}
+mark{padding:.12em .38em;background:var(--red);color:var(--paper-hi);font:700 1.08rem/1.62 var(--f-disp);-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.values{display:grid;justify-items:start;gap:.35rem;margin:.2rem 0 1rem}
+.values mark{padding:.2em .45em .14em;font:800 clamp(1.25rem,1.9vw,1.62rem)/1.12 var(--f-disp);font-stretch:72%;text-transform:uppercase;letter-spacing:.01em}
+.mphoto{margin:0 0 .3rem}
+.mphoto img{width:100%;mix-blend-mode:multiply}
+.closing{margin:clamp(1.6rem,3.4vw,2.4rem) 0 0}
+.closing img{width:100%;box-shadow:0 12px 26px rgba(40,24,8,.35)}
 
 /* ticker */
 .ticker{margin:clamp(1.8rem,3.8vw,2.6rem) calc(-1 * var(--pad)) 0;background:var(--ink);color:var(--paper-hi);overflow:hidden;border-block:4px double rgba(236,224,194,.55)}
@@ -154,10 +162,13 @@ a{color:inherit}
 .section__head{margin:0 0 clamp(1rem,2.2vw,1.45rem);max-width:19ch;font:800 clamp(2.15rem,5.4vw,4.3rem)/.95 var(--f-head);letter-spacing:-.005em;text-wrap:balance}
 .lede{margin:-.35rem 0 1.5rem;max-width:58ch;font-size:1.14rem;line-height:1.5}
 
-.editorial__grid{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,1fr);gap:clamp(1.6rem,3.6vw,3rem);align-items:start}
-.editorial__body{columns:2 15rem;column-gap:2.1rem;column-rule:1px solid var(--ink-rule)}
-.editorial__body p{margin:0 0 .9rem;text-align:justify;-webkit-hyphens:auto;hyphens:auto;line-height:1.58}
-.dropcap::first-letter{float:left;font:800 4.4em/.8 var(--f-head);padding:.07em .09em 0 0}
+.share__grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:clamp(1.8rem,4vw,3.4rem);align-items:start}
+.poster{margin:0;max-width:27rem}
+.poster a{display:block}
+.poster img{width:100%;box-shadow:0 16px 34px rgba(40,24,8,.4),0 2px 4px rgba(40,24,8,.3);transform:rotate(-.8deg)}
+.poster .caption{margin-top:.9rem}
+.share__side{display:grid;gap:2rem;align-content:start}
+.share__actions{display:flex;flex-wrap:wrap;gap:.6rem}
 .latest{display:grid;gap:.9rem;justify-items:center}
 .clip-wrap{width:100%;filter:drop-shadow(0 10px 16px rgba(50,30,10,.34)) drop-shadow(0 2px 2px rgba(50,30,10,.28));transform:rotate(1.3deg)}
 .clipping{display:block;padding:1.35rem 1.3rem 1.5rem;background-color:#e8dbbb;background-image:var(--grain);text-decoration:none;clip-path:polygon(0% 1.6px,4% 0.8px,8% 3.3px,12% 0.4px,16% 2.7px,20% 1.8px,24% 0.3px,28% 2.5px,32% 0.2px,36% 2.2px,40% 0.3px,44% 0.5px,48% 2.1px,52% 4.1px,56% 0.6px,60% 1.1px,64% 3.1px,68% 4.7px,72% 2.9px,76% 2.0px,80% 4.9px,84% 0.2px,88% 4.3px,92% 1.4px,96% 0.7px,100% 0.6px,calc(100% - 1.5px) 4%,calc(100% - 4.1px) 9%,calc(100% - 0.9px) 14%,calc(100% - 2.9px) 19%,calc(100% - 3.2px) 24%,calc(100% - 1.9px) 29%,calc(100% - 2.7px) 34%,calc(100% - 0.3px) 39%,calc(100% - 0.3px) 44%,calc(100% - 1.0px) 49%,calc(100% - 3.4px) 54%,calc(100% - 2.1px) 59%,calc(100% - 1.6px) 64%,calc(100% - 2.9px) 69%,calc(100% - 2.3px) 74%,calc(100% - 1.5px) 79%,calc(100% - 4.0px) 84%,calc(100% - 3.5px) 89%,calc(100% - 1.2px) 94%,100% calc(100% - 2.9px),96% calc(100% - 2.6px),92% calc(100% - 4.4px),88% calc(100% - 3.6px),84% calc(100% - 1.4px),80% calc(100% - 4.9px),76% calc(100% - 0.6px),72% calc(100% - 2.1px),68% calc(100% - 3.8px),64% calc(100% - 0.8px),60% calc(100% - 2.4px),56% calc(100% - 0.2px),52% calc(100% - 3.3px),48% calc(100% - 3.8px),44% calc(100% - 2.9px),40% calc(100% - 4.4px),36% calc(100% - 1.6px),32% calc(100% - 3.5px),28% calc(100% - 3.0px),24% calc(100% - 2.9px),20% calc(100% - 2.3px),16% calc(100% - 4.2px),12% calc(100% - 4.7px),8% calc(100% - 2.4px),4% calc(100% - 3.3px),0% calc(100% - 0.3px),3.5px 96%,3.2px 91%,5.0px 86%,4.1px 81%,1.4px 76%,1.9px 71%,3.3px 66%,0.1px 61%,2.3px 56%,0.8px 51%,0.6px 46%,0.3px 41%,3.8px 36%,0.6px 31%,1.2px 26%,2.0px 21%,4.4px 16%,0.4px 11%,2.2px 6%)}
@@ -242,13 +253,13 @@ a.ad:hover{background:rgba(30,22,13,.06)}
   .topbar__actions{margin-left:auto}
 }
 @media (max-width:900px){
-  .front__grid{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "photo" "lead";border-top:0;padding-top:0}
-  .col{padding:0!important;border-left:0!important}
-  .col--copy{grid-area:copy;margin-top:1.4rem}
-  .col--photo{grid-area:photo;margin-top:1.8rem}
-  .col--lead{grid-area:lead;margin-top:1.4rem;padding-top:1rem!important;border-top:1px solid var(--ink-rule)}
-  .editorial__grid,.markets__grid,.press__grid,.colophon__grid{grid-template-columns:minmax(0,1fr)}
+  .coupon__actions .btn{flex:1 1 13rem}
+  .manifesto{grid-template-columns:minmax(0,1fr)}
+  .mcol{padding:0!important;border-left:0!important}
+  .mcol+.mcol{margin-top:.6rem;padding-top:1.2rem!important;border-top:1px solid var(--ink-rule)}
+  .share__grid,.markets__grid,.press__grid,.colophon__grid{grid-template-columns:minmax(0,1fr)}
   .latest{max-width:30rem;margin:0 auto;width:100%}
+  .poster{margin:0 auto}
   .press__preview{position:static;max-width:34rem;order:-1;margin:0 auto .4rem}
   .steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:1.8rem}
   .steps li:nth-child(2){padding-right:0}
@@ -259,10 +270,10 @@ a.ad:hover{background:rgba(30,22,13,.06)}
   .ear{grid-area:l;justify-self:start;padding:.28rem .5rem;font-size:.58rem}
   .ear:last-of-type{grid-area:r;justify-self:end}
   .masthead{grid-area:m;font-size:9vw;font-size:calc(100cqi / 10.1)}
+  .headline{font-size:clamp(2.3rem,10.4vw,3.4rem)}
   .dateline{justify-content:center}
   .motto{letter-spacing:.12em;font-size:.6rem}
   .dateline .vol{display:none}
-  .editorial__body{columns:1}
   .steps{grid-template-columns:minmax(0,1fr)}
   .steps li{display:grid;grid-template-columns:2.8rem minmax(0,1fr);column-gap:.7rem;padding:0!important;border-left:0!important}
   .steps li::before{grid-row:span 2;font-size:2.9rem;margin:0}
@@ -280,7 +291,8 @@ a.ad:hover{background:rgba(30,22,13,.06)}
 <header class="topbar">
   <a class="topbar__brand" href="#front"><span class="full">New Venezuela Jornaul</span><span class="short" aria-hidden="true">NVJ</span></a>
   <nav class="topbar__nav" aria-label="Sections">
-    <a href="#editorial">Editorial</a>
+    <a href="#front">Manifesto</a>
+    <a href="#share">Share</a>
     <a href="#markets">Markets</a>
     <a href="#subscribe">How to buy</a>
     <a href="#press">Print yours</a>
@@ -301,92 +313,118 @@ a.ad:hover{background:rgba(30,22,13,.06)}
       <h1 class="masthead">New Venezuela Jornaul</h1>
       <p class="ear">A more<br>informed<br>world</p>
     </div>
-    <p class="motto">Independent news for a changing hemisphere</p>
+    <p class="motto">More than a memecoin. A message to the world.</p>
     <div class="dateline">
       <span class="vol">Vol. I &mdash; No. 1</span>
       <time data-today>Friday, October 30, 2026</time>
       <span>On-chain edition</span>
     </div>
 
-    <h2 class="headline" id="headline">When the Newspaper Starts Printing Coins Instead</h2>
-    <p class="dek">A new era of on-chain publishing threatens the very institutions that print money for a living</p>
+    <h2 class="headline" id="headline"><span>We don&rsquo;t want your money.</span> <span class="headline__red">We want your attention.</span></h2>
 
-    <div class="front__grid">
-      <article class="col col--lead">
-        <h3 class="col__head">Central banks, once the only ones allowed to print, face growing competition</h3>
-        <svg class="orn" viewBox="0 0 64 10" aria-hidden="true"><path d="M0 5h25M39 5h25" stroke="currentColor" stroke-width="1"/><path d="M32 1l4 4-4 4-4-4z" fill="currentColor"/></svg>
-        <p><span class="place">On-chain</span> &mdash; In an edition published this week, the New Venezuela Jornaul announced it would print something besides headlines: $SOSTRUMP, a meme coin for the readers who turned its front pages into the most argued-about images on the timeline.</p>
-        <p>What was once a paper you screenshotted is now a paper you can hold: 1,000,000,000 copies in circulation, a fair launch on pump.fun, no presale.</p>
-        <p>Every edition, and the contract address, is posted first at <a href="https://x.com/NVJournal" data-link="x" target="_blank" rel="noopener">@NVJournal</a> on X.</p>
-      </article>
-
-      <figure class="col col--photo">
-        <img src="assets/img/justice-504.jpg" srcset="assets/img/justice-504.jpg 504w, assets/img/justice-1008.jpg 1008w" sizes="(min-width: 1200px) 500px, (min-width: 900px) 42vw, 92vw" width="504" height="473" alt="Engraving-style picture of a blindfolded statue of Justice holding scales, with the twin towers and domes of Brasília behind her" fetchpriority="high">
-        <figcaption>Justice is blind. The blockchain isn&rsquo;t: every $SOSTRUMP trade is public and permanent on Solana.</figcaption>
-      </figure>
-
-      <aside class="col col--copy" aria-labelledby="copy-head">
-        <h3 class="col__head col__head--big" id="copy-head">Get your copy</h3>
-        <!-- The contract address (CA) shows here. Do not edit this block: paste the CA in CONFIG near the end of the file. -->
-        <div class="coupon" data-coupon data-state="pending">
-          <svg class="coupon__cut" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg>
-          <p class="coupon__label">Contract address</p>
-          <p class="coupon__ca" data-ca>Prints here at launch</p>
-          <button class="btn btn--ink btn--block" type="button" data-copy disabled>Copy address</button>
-          <span class="stamp" data-stamp aria-hidden="true">Going to press</span>
-        </div>
+    <!-- The contract address (CA) shows here. Do not edit this block: set the CA in config.js. -->
+    <div class="coupon" data-coupon data-state="pending">
+      <svg class="coupon__cut" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg>
+      <div class="coupon__info">
+        <p class="coupon__label">$SOSTRUMP contract address</p>
+        <p class="coupon__ca" data-ca>Prints here at launch</p>
         <p class="note" data-ca-note>Follow @NVJournal to see the address the moment it prints. Only trust the one posted here and there.</p>
-        <div class="cta-stack">
-          <a class="btn btn--ink btn--block" data-buy hidden href="#subscribe" target="_blank" rel="noopener">Buy $SOSTRUMP on pump.fun</a>
-          <a class="btn btn--line btn--block" data-follow data-link="x" href="https://x.com/NVJournal" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>Follow @NVJournal</a>
-        </div>
-      </aside>
+      </div>
+      <div class="coupon__actions">
+        <button class="btn btn--ink" type="button" data-copy disabled>Copy address</button>
+        <a class="btn btn--ink" data-buy hidden href="#subscribe" target="_blank" rel="noopener">Buy $SOSTRUMP on pump.fun</a>
+        <a class="btn btn--line" data-follow data-link="x" href="https://x.com/NVJournal" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>Follow @NVJournal</a>
+      </div>
+      <span class="stamp" data-stamp aria-hidden="true">Going to press</span>
     </div>
+
+    <div class="manifesto">
+      <div class="mcol">
+        <p class="lead-in">Well&hellip; considering the economic situation back home, maybe we could use some of that money too.</p>
+        <p><mark>But that&rsquo;s not why this memecoin was born.</mark></p>
+        <p><strong>New Venezuela Jornaul</strong> was created with one mission: to carry a message straight into the trenches of the crypto world, reaching the degens who understand how a bloated government can end up hurting the very people it is supposed to protect.</p>
+        <h3>A polarized Brazil</h3>
+        <p>Today, Brazil is living through a period of extreme political polarization. We&rsquo;ve reached a point where people celebrate when their political opponents are targeted, without even stopping to ask whether the same standards would be applied to their own side.</p>
+        <p><mark>And this isn&rsquo;t just about the left or the right.</mark></p>
+        <p>The divide has become so deep that even those who claim to stand for freedom sometimes celebrate when that freedom is restricted for someone they disagree with.</p>
+      </div>
+      <div class="mcol">
+        <figure class="mphoto">
+          <img src="assets/img/crowd.jpg" width="638" height="482" loading="lazy" alt="A crowd gathered in front of Brazil&rsquo;s National Congress in Bras&iacute;lia, with a Brazilian flag waving over them">
+        </figure>
+        <h3>Disagreement doesn&rsquo;t make enemies</h3>
+        <p>But political disagreement should never turn us into enemies. Regardless of our political beliefs, we believe that respect, freedom of speech, and due process must always come first.</p>
+        <h3>Institutional concerns</h3>
+        <p>We are also deeply concerned about Brazil&rsquo;s institutional landscape. The concentration of authority in certain judicial matters, questions surrounding impartiality, and debates over the effectiveness of accountability mechanisms have left many Brazilians worried about legal uncertainty.</p>
+        <p><mark>When people begin to lose trust in their institutions, society as a whole pays the price.</mark></p>
+      </div>
+      <div class="mcol">
+        <h3>Not about elections</h3>
+        <p>We are not here to challenge election results or make allegations of fraud without evidence. We are here to defend something that should stand above every political ideology:</p>
+        <p class="values"><mark>Transparency.</mark> <mark>Justice.</mark> <mark>Freedom.</mark> <mark>And the right to question those in power.</mark></p>
+        <h3>A call for attention</h3>
+        <p>We want the world to pay attention to what is happening in Brazil. And we are speaking out because we have genuine concerns about possible retaliation for expressing our views.</p>
+        <h3>More than a memecoin</h3>
+        <p>This memecoin is not a promise of wealth. It is a message, a community, and a way to bring attention to issues we believe deserve to be discussed.</p>
+        <p>We are not asking you to agree with everything we say. We are simply asking you to listen, question, and draw your own conclusions.</p>
+      </div>
+    </div>
+
+    <figure class="closing">
+      <img src="assets/img/closing-941.jpg" srcset="assets/img/closing-941.jpg 941w, assets/img/closing-1412.jpg 1412w" sizes="(min-width: 1200px) 1100px, 94vw" width="941" height="562" loading="lazy" alt="A blindfolded statue of Justice holding scales beside a crowd, Brazil&rsquo;s National Congress and a Brazilian flag, under the words: Because when a society loses the ability to question power, freedom begins to lose its meaning. New Venezuela Jornaul. More than a memecoin. A message to the world.">
+    </figure>
   </section>
 
   <div class="ticker" aria-hidden="true">
     <div class="ticker__track">
       <div class="ticker__group">
-        <span>Truth beyond borders</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
+        <span>We don&rsquo;t want your money</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
+        <span>We want your attention</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
+        <span>Transparency</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
+        <span>Justice</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
+        <span>Freedom</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
+        <span>The right to question those in power</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
         <span>$SOSTRUMP on Solana</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
-        <span>1,000,000,000 copies in circulation</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
-        <span>Fair launch on pump.fun</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
-        <span>The central bank can&rsquo;t print this one</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
-        <span>Every edition at @NVJournal</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
-        <span>Spelled Jornaul. On purpose.</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
+        <span>More than a memecoin</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
       </div>
       <div class="ticker__group">
-        <span>Truth beyond borders</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
+        <span>We don&rsquo;t want your money</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
+        <span>We want your attention</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
+        <span>Transparency</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
+        <span>Justice</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
+        <span>Freedom</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
+        <span>The right to question those in power</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
         <span>$SOSTRUMP on Solana</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
-        <span>1,000,000,000 copies in circulation</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
-        <span>Fair launch on pump.fun</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
-        <span>The central bank can&rsquo;t print this one</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
-        <span>Every edition at @NVJournal</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
-        <span>Spelled Jornaul. On purpose.</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
+        <span>More than a memecoin</span><svg viewBox="0 0 20 20"><path d="M10 0l2.6 7.4L20 10l-7.4 2.6L10 20l-2.6-7.4L0 10l7.4-2.6z"/></svg>
       </div>
     </div>
   </div>
 
-  <section class="section editorial" id="editorial" aria-labelledby="ed-head">
-    <h2 class="section__head" id="ed-head">Readers Demand a Piece of the Press</h2>
-    <div class="editorial__grid">
-      <div class="editorial__body">
-        <p class="dropcap">Every few days, @NVJournal puts out a new front page: aged paper, a blackletter masthead, and a headline about the courts, banks and palaces of a changing hemisphere. People argue about it in the replies, screenshot it, and send it to the family group chat.</p>
-        <p>$SOSTRUMP is the paper&rsquo;s coin. There is no subscription, no paywall and no editorial board, just a ticker, a contract, and readers who wanted a piece of the press.</p>
-        <p>Hold it, trade it, or scroll down and print a front page of your own. Then post it and tag @NVJournal.</p>
-        <p>And yes, it is spelled Jornaul. The copy editor was paid in memecoins.</p>
-      </div>
-      <div class="latest">
-        <div class="clip-wrap">
-          <a class="clipping" data-ed-link href="https://x.com/NVJournal" target="_blank" rel="noopener" aria-label="Latest edition on X">
-            <p class="clipping__mast">New Venezuela Jornaul</p>
-            <p class="clipping__date" data-ed-date>Thursday, September 10, 2026</p>
-            <h3 class="clipping__head" data-ed-head>When the Defenders of Democracy Turn Their Backs on It Instead</h3>
-            <p class="clipping__dek" data-ed-dek>A new era of political contradiction threatens the very institutions long claimed to be under protection</p>
-          </a>
+  <section class="section share" id="share" aria-labelledby="sh-head">
+    <h2 class="section__head" id="sh-head">Spread the Message</h2>
+    <p class="lede">Save the front page and post it. Tag @NVJournal so the newsroom sees it.</p>
+    <div class="share__grid">
+      <figure class="poster">
+        <a href="assets/img/manifesto.jpg" target="_blank" rel="noopener"><img src="assets/img/manifesto.jpg" width="941" height="1672" loading="lazy" alt="The full New Venezuela Jornaul front page: We don&rsquo;t want your money. We want your attention."></a>
+        <figcaption class="caption">The full front page. Tap to open it at full size.</figcaption>
+      </figure>
+      <div class="share__side">
+        <div class="share__actions">
+          <a class="btn btn--ink" href="assets/img/manifesto.jpg" download="new-venezuela-jornaul-front-page.jpg">Save the front page</a>
+          <a class="btn btn--line" id="share-post" href="https://x.com/intent/tweet" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>Post on X</a>
         </div>
-        <p class="caption">The latest edition, as printed on @NVJournal.</p>
-        <a class="btn btn--line btn--sm" data-ed-link href="https://x.com/NVJournal" target="_blank" rel="noopener">Read it on X</a>
+        <div class="latest">
+          <div class="clip-wrap">
+            <a class="clipping" data-ed-link href="https://x.com/NVJournal" target="_blank" rel="noopener" aria-label="Latest edition on X">
+              <p class="clipping__mast">New Venezuela Jornaul</p>
+              <p class="clipping__date" data-ed-date>Thursday, September 10, 2026</p>
+              <h3 class="clipping__head" data-ed-head>When the Defenders of Democracy Turn Their Backs on It Instead</h3>
+              <p class="clipping__dek" data-ed-dek>A new era of political contradiction threatens the very institutions long claimed to be under protection</p>
+            </a>
+          </div>
+          <p class="caption">Every edition is printed first on @NVJournal.</p>
+          <a class="btn btn--line btn--sm" data-ed-link href="https://x.com/NVJournal" target="_blank" rel="noopener">Read it on X</a>
+        </div>
       </div>
     </div>
   </section>
@@ -504,7 +542,7 @@ a.ad:hover{background:rgba(30,22,13,.06)}
       </div>
       <div>
         <h2>Disclaimer</h2>
-        <p>$SOSTRUMP is a meme coin with no intrinsic value and no expectation of financial return. It is for entertainment only. The artwork and headlines on this site are parody. $SOSTRUMP is not affiliated with, endorsed by or connected to Donald J. Trump, his family or his businesses, the official $TRUMP token, or any newspaper, government, court or central bank, nor with Solana or pump.fun. Crypto is volatile: only spend what you can afford to lose. Not financial advice.</p>
+        <p>$SOSTRUMP is a meme coin with no intrinsic value and no expectation of financial return. It is not a promise of wealth. The front pages on this site are opinion and parody, and the artwork is illustrative. $SOSTRUMP is not affiliated with, endorsed by or connected to Donald J. Trump, his family or his businesses, the official $TRUMP token, or any newspaper, government, court, party or central bank, nor with Solana or pump.fun. Crypto is volatile: only spend what you can afford to lose. Not financial advice.</p>
       </div>
     </div>
     <div class="colophon__base">
@@ -585,6 +623,10 @@ a.ad:hover{background:rgba(30,22,13,.06)}
   if (L.headline) $$("[data-ed-head]").forEach(function (el) { el.textContent = L.headline; });
   if (L.dek) $$("[data-ed-dek]").forEach(function (el) { el.textContent = L.dek; });
   $$("[data-ed-link]").forEach(function (el) { el.href = L.url || xURL; });
+
+  /* share the front page on X */
+  var sharePost = $("#share-post");
+  if (sharePost) sharePost.href = "https://x.com/intent/tweet?text=" + encodeURIComponent("We don\u2019t want your money. We want your attention.\n\nNew Venezuela Jornaul @NVJournal $SOSTRUMP\nhttps://" + NVJ.domain);
 
   /* copying */
   function copyText(text) {
@@ -753,7 +795,7 @@ a.ad:hover{background:rgba(30,22,13,.06)}
     ctx.font = ms + "px 'NVJ Mast'"; ctx.textAlign = "center";
     ctx.fillText("New Venezuela Jornaul", W / 2, earY + earH / 2 + ms * .3);
     ctx.font = "700 16px 'NVJ Text'";
-    spaced("INDEPENDENT NEWS FOR A CHANGING HEMISPHERE", W / 2, 186, 3.4);
+    spaced("MORE THAN A MEMECOIN. A MESSAGE TO THE WORLD.", W / 2, 186, 3.2);
     rule(204, 1.5);
     ctx.font = "400 16px 'NVJ Text'";
     ctx.textAlign = "left"; ctx.fillText("VOL. I — No. " + edition, M, 229);
